@@ -38,14 +38,18 @@ A simple machine learning web app to predict a student's final exam score based 
 
 ## ⚙️ How to Run Locally
 
-1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/student-performance-predictor.git
-cd student-performance-predictor
+# 1. Clone this repo
+git clone https://github.com/SouravSreelan/studentPerformancePredictor.git
+cd studentPerformancePredictor
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Train the model (if not already)
+python train_model.py
+
+# 4. Run the app
+streamlit run main.py
 ```
-Install dependencies:
-  pip install -r requirements.txt
-  
-Run the app:
-  streamlit run app.py
 
