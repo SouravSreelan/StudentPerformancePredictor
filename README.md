@@ -28,7 +28,7 @@ A simple machine learning web app to predict a student's final exam score based 
 
 ---
 
-## 🧠 Model Details
+## 🖥️ Model Details
 
 - **Model**: Linear Regression
 - **Training Set**: UCI Student Performance Dataset (`student-mat.csv`)
