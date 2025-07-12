@@ -30,8 +30,7 @@ def user_inputs():
     Dalc = st.sidebar.slider("🍺 Daily Alcohol (1–5)", 1, 5, 1)
     Walc = st.sidebar.slider("🍷 Weekend Alcohol (1–5)", 1, 5, 2)
 
-    input_df = pd.DataFrame([[studytime, failures, absences, G1, G2, age, Medu, Fedu, goout, Dalc, Walc]],
-                            columns=features)
+    input_df = pd.DataFrame([[studytime, failures, absences, G1, G2, age, Medu, Fedu, goout, Dalc, Walc]],columns=features)
     return input_df
 
 input_df = user_inputs()
@@ -53,7 +52,7 @@ fig2, ax2 = plt.subplots()
 sns.histplot(df["G3"], bins=20, kde=True, ax=ax2, color="skyblue")
 st.pyplot(fig2)
 
-st.markdown("### 🧠 Feature Importance (Top Predictors)")
+st.markdown("### Feature Importance (Top Predictors)")
 importances = model.feature_importances_
 importance_df = pd.DataFrame({
     'Feature': features,
