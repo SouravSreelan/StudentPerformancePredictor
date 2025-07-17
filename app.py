@@ -37,7 +37,7 @@ input_df = user_inputs()
 
 if st.sidebar.button("🎯 Predict Final Grade"):
     prediction = model.predict(input_df)[0]
-    prediction = max(0, min(20, prediction))  # Clip to valid range
+    prediction = max(0, min(20, prediction))  
     st.success(f"🎓 Predicted Final Grade: **{prediction:.2f} / 20**")
 
 st.subheader("📊 Data Visualizations")
