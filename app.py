@@ -11,7 +11,7 @@ st.set_page_config(page_title="🎓 Student Performance Predictor", layout="cent
 st.title("🎓 Student Performance Predictor")
 st.write("Predict a student's final exam score (G3) based on academic and lifestyle features.")
 
-df = pd.read_csv("data/student-mat.csv", sep=';')
+df = pd.read_csv("data/student-mat.csv", sep=';' )
 features = ['studytime', 'failures', 'absences', 'G1', 'G2', 'age', 'Medu', 'Fedu', 'goout', 'Dalc', 'Walc']
 df = df[features + ['G3']]
 
@@ -42,7 +42,7 @@ if st.sidebar.button("🎯 Predict Final Grade"):
 
 st.subheader("📊 Data Visualizations")
 
-st.markdown("### 🔍 Correlation Heatmap")
+st.markdown("🔍 Correlation Heatmap")
 fig1, ax1 = plt.subplots(figsize=(10, 6))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm", ax=ax1)
 st.pyplot(fig1)
