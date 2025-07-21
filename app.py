@@ -47,7 +47,7 @@ fig1, ax1 = plt.subplots(figsize=(10, 6))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm", ax=ax1)
 st.pyplot(fig1)
 
-st.markdown("### 🧪 Grade Distribution")
+st.markdown("## Grade Distribution")
 fig2, ax2 = plt.subplots()
 sns.histplot(df["G3"], bins=20, kde=True, ax=ax2, color="skyblue")
 st.pyplot(fig2)
