@@ -14,6 +14,7 @@ A simple machine learning web app to predict a student's final exam score based 
 - Interactive sliders for inputs
 - Clean and modern UI built with Streamlit
 
+ 
 ---
 
 ## 📊 Sample Inputs
@@ -25,13 +26,13 @@ A simple machine learning web app to predict a student's final exam score based 
 | absences    | Number of school absences            |
 | G1          | First period grade (0–20)            |
 | G2          | Second period grade (0–20)           |
-
+ 
 ---
 
 ## 🖥️ Model Details
 
 - **Model**: Linear Regression
-- **Training Set**: UCI Student Performance Dataset (`student-mat.csv`)
+- **Training Set**: UCI Student Performance Dataset (`student-mat.csv`) 
 - **Target**: Final Grade (G3)
 
 ---
