@@ -1,6 +1,7 @@
 # 🎓 Student Performance Predictor
 
-A simple machine learning web app to predict a student's final exam score based on study time, past grades, and attendance. Built with Python, scikit-learn, and deployed using Streamlit.
+A simple machine learning web app to predict a student's final exam score based on study time, past grades, and attendance. Built with Python, scikit-learn, and deployed using Streamlit. 
+
 
 ## 🚀 Live Demo
 👉 [View Demo on Streamlit Cloud](https://studentperformancepredictor-j3jdrnrgzdtuyagsdipv7f.streamlit.app/)
@@ -52,5 +53,6 @@ python train_model.py
 
 # 4. Run the app
 streamlit run main.py
+
 ```
 
