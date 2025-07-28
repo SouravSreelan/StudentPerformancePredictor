@@ -62,3 +62,4 @@ importance_df = pd.DataFrame({
 fig3, ax3 = plt.subplots()
 sns.barplot(x='Importance', y='Feature', data=importance_df, ax=ax3)
 st.pyplot(fig3)
+
