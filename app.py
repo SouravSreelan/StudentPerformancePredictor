@@ -41,7 +41,6 @@ if st.sidebar.button("🎯 Predict Final Grade"):
     st.success(f"🎓 Predicted Final Grade: **{prediction:.2f} / 20**")
 
 st.subheader("📊 Data Visualizations")
-
 st.markdown("🔍 Correlation Heatmap")
 fig1, ax1 = plt.subplots(figsize=(10, 6))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm", ax=ax1)
