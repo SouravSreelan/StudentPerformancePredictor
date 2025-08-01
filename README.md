@@ -41,7 +41,7 @@ A simple machine learning web app to predict a student's final exam score based 
 ## ⚙️ How to Run Locally
 
 ```bash
-# 1. Clone this repo
+# 1. Clone this repository
 git clone https://github.com/SouravSreelan/studentPerformancePredictor.git
 cd studentPerformancePredictor
 
