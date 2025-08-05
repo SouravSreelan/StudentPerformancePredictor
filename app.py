@@ -56,10 +56,10 @@ st.markdown("### Feature Importance (Top Predictors)")
 importances = model.feature_importances_
 importance_df = pd.DataFrame({
     'Feature': features,
-    'Importance': importances
-}).sort_values(by='Importance', ascending=False)
+    'Importance': importances}).sort_values(by='Importance', ascending=False)
 
 fig3, ax3 = plt.subplots()
 sns.barplot(x='Importance', y='Feature', data=importance_df, ax=ax3)
 st.pyplot(fig3)
+
 
